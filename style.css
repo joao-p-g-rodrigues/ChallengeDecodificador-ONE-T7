@@ -1,0 +1,186 @@
+:root {
+    --cor-primaria: #7FA1C3;
+    --cor-secundaria: #E2DAD6;
+    --cor-fundo: #E2DAD6;
+    --cor-texto: #7FA1C3;
+    --cor-botao: #F5EDED;
+
+    --fonte-principal: "Inter", sans-serif;
+
+    --tamanho-fonte: 32px;
+    --altura-linha: 150%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: var(--tamanho-fonte);
+    line-height: var(--altura-linha);
+}
+
+.logoAlura {
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 7%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    color: var(--cor-texto);
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: var(--cor-texto);
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensagem {
+    background: var(--cor-botao);
+    background-image: url(/img/boneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-texto);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    justify-content: space-between; /* Distribui espaço entre o conteúdo e o botão */
+    position: relative;
+    height: auto; /* Deixe o tamanho ser definido pelo conteúdo */
+}
+
+.mensagem.com-texto {
+    background-image: none; /* Remove a imagem quando há texto */
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: var(--cor-secundaria);
+    border: 1px solid var(--cor-texto);
+    border-radius: 24px;
+    color: var(--cor-texto);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: var(--cor-texto);
+    border: 1px solid var(--cor-texto);
+    border-radius: 24px;
+    color: var(--cor-botao);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar {
+    border: 1px solid var(--cor-texto);
+    border-radius: 24px;
+    color: var(--cor-texto);
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--cor-secundaria);
+    align-self: flex-end; /* Alinha o botão à direita dentro da caixa */
+    margin-top: 10px; /* Espaçamento superior para separar do conteúdo */
+    width: 50%; /* Largura relativa para se ajustar ao tamanho da caixa */
+    max-width: 200px; /* Largura máxima para não exceder */
+    min-width: 150px; /* Define uma largura mínima */
+}
+
+.oculto {
+    display: none;
+}
+
+.informs {
+    color: #495057;
+    font-size: 18px;
+}
+
+/* .rodape {
+    padding: 24px;
+    color: var(--cor-texto);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+} */
+.rodape {  
+    display: flex;  
+    justify-content: space-between;  
+    padding: 24px;  
+    color: var(--cor-texto);  
+    background-color: var(--cor-secundaria);  
+    font-family: var(--fonte-principal);  
+    font-size: 1.5rem;  
+    font-weight: 400;  
+}  
+.secao {  
+    flex: 1;  
+    margin: 0 10px;  
+}  
+.rodape a {  
+    color: var(--cor-texto);  
+    text-decoration: none;  
+    margin-right: 10px;  
+}  
+.rodape a:hover {  
+    text-decoration: underline;  
+}  
+.formulario-newsletter {  
+    margin-top: 16px;  
+}  
+.redes-sociais {  
+    display: flex;  
+    align-items: center;  
+    margin-top: 10px;  
+}  
+.redes-sociais img {  
+    margin-left: 8px; /* Espaçamento entre o texto e os ícones */  
+}  
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main {
+        margin-left: 0;
+    }
+
+    .text-area,
+    .mensagem {
+        width: 100%;
+    }
+
+    .btn-copiar {
+        margin-left: 0;
+        width: 100%;
+    }
+}
