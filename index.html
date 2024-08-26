@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logoAlura" src="img/logoAlura.png" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto aqui!"></textarea>
+
+            <div class="informs">
+                <h6>apenas letras minusculas e sem acentos</h6>
+            </div>
+
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncripitar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencripitar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="btn-copiar oculto" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+
+    <!-- <footer class="rodape">
+        
+    </footer> -->
+    <footer class="rodape">  
+        <div class="secao">  
+            <p>Desenvolvido por joao-p-g-rodrigues - Oracle ONE</p>
+            
+            <div class="redes-sociais">  
+                <a href="https://cursos.alura.com.br/user/joao6385" target="_blank">
+                    <img src="img/logoAlura.png" alt="Alura" width="24" height="24"> 
+                </a>
+                
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="img/linkedin.svg" alt="linkedin" width="24" height="24"> 
+                </a>
+
+                <a href="https://discord.com/" target="_blank">
+                    <img src="img/discord.svg" alt="Facebook" width="24" height="24">
+                </a>
+
+                <a href="https://github.com/joao-p-g-rodrigues" target="_blank">
+                    <img src="img/github.svg" alt="Facebook" width="24" height="24">
+                </a>
+
+            </div> 
+        </div>  
+    </footer>  
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
